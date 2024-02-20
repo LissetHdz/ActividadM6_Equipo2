@@ -15,3 +15,8 @@ library(factoextra)
 #2. Cargar data
 data <- read.csv("C:\Users\alanh\Downloads\wine.csv")
 
+#3. Escalar la base de datos
+data_escalada<- scale(data)
+
+#Definir número de grupos
+grupos <- 3
