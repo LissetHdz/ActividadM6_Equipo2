@@ -40,3 +40,19 @@ set.seed(123)
 optimizacion <- clusGap(data_escalada, FUN = kmeans, nstart = 1, K.max = 10)
 plot(optimizacion,xlab = "Numero de clusters k")
 
+#Paso 9. Comparación de segmentos
+cluster_prom <- aggregate(. ~ cluster, data=asignacion, FUN=mean)
+cluster_prom
+
+# Conclusión
+# La segmentación, o agrupación en clusters, es una herramienta valiosa para 
+# las empresas que buscan clasificar a sus clientes y llevar a cabo campañas 
+# de marketing más precisas y especializadas. En este contexto, se determinó 
+# el número óptimo de segmentos para analizar un listado de vinos, siendo 3 
+# el número ideal. Esta segmentación refleja la diversidad de vinos, lo que 
+# a su vez representa las preferencias de los consumidores para los productores 
+# y distribuidores. Posteriormente, esta segmentación facilitará un estudio 
+# más detallado sobre las características específicas de cada grupo de 
+# consumidores. 
+
+
